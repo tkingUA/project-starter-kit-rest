@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { withRouter } from 'react-router-dom';
-import { Header, Icon } from 'semantic-ui-react';
+import { Header, Icon, Sticky } from 'semantic-ui-react';
 
 class PageHeader extends Component {
   constructor(props) {
@@ -24,6 +24,7 @@ class PageHeader extends Component {
 
   render() {
     return (
+    <Sticky className="header-area">
       <header>
         <div className="header-content">
           <div className="header-logo">
@@ -49,6 +50,7 @@ class PageHeader extends Component {
           </div>
         </div>
       </header>
+    </Sticky>
     );
   }
 }

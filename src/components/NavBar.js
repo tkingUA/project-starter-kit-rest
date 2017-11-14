@@ -1,7 +1,7 @@
 'use strict';
 import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Sticky } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 
 
@@ -22,7 +22,7 @@ class NavBar extends Component {
     const { activeItem } = this.state;
 
     return (
-      <div className="navbar navbar-row">
+      <Sticky className="navbar navbar-row">
         <nav className="navbar navbar-bg" role="navigation">
           <div className="navlinks">
             <Menu pointing secondary>
@@ -45,7 +45,7 @@ class NavBar extends Component {
               </Menu>
           </div>
         </nav>
-      </div>
+      </Sticky>
     );
   }
 }

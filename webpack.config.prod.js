@@ -59,6 +59,15 @@ export default {
     new webpack.optimize.UglifyJsPlugin({ sourceMap: true }),
   ],
   module: {
+    loaders: [{
+        test: /\.js$/,
+        loader: 'babel-loader',
+        query: {
+            presets: ['es2015'],
+            plugins: ["babel-plugin-transform-class-properties"]
+        }
+    }],
+
     rules: [
       {
         test: /\.jsx?$/,

@@ -28,7 +28,7 @@ class FuelSavingsForm extends React.Component {
     const {fuelSavings} = this.props;
 
     return (
-      <div className="content">
+      <div className="fuel-saveing-content">
         <h2>Fuel Savings Analysis</h2>
         <table>
           <tbody>

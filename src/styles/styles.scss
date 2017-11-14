@@ -31,29 +31,33 @@ td.fuel-savings-label { width: 175px; }
 
 // Main Content
 .content {
-  max-width: 72%;
-  margin: 10px auto;
+  max-width: 75%;
+  margin: 25px auto;
+  padding-top: 140px;
 }
-// NavBar
+// NAVBAR
 .navbar {
-  min-width: 100vw;
-  max-width: 100% !important;
+    min-width: 100%;
+    max-width: 100% !important;
+    float: right;
+    position:fixed;
+    margin-top: 35px;
+    z-index: 2000;
 }
 
 .navbar-bg {
   @extend .navbar;
   background-color: white;
   border-bottom: 2px solid rgba(34, 36, 38, 0.15);
-  // border-style: outset;
+
 }
 .ui.secondary.pointing.menu {
   border-bottom: 2px solid rgba(34, 36, 38, 0) !important;
 }
 .navlinks {
-  margin: 0 auto;
-  margin-bottom: -2px;
-  max-width: 75%;
-  z-index: 100%;
+    margin: 0 auto;
+    margin-bottom: -2px;
+    max-width: 75%;
 }
 
 /**
@@ -61,9 +65,13 @@ td.fuel-savings-label { width: 175px; }
 **/
 header {
   width: 100%;
-  background-color: rgb(222, 222, 222);
-  padding: 10px 5px 0 5px;
+  background-color: #a6c4d8;
+  margin-top: -10px;
   align-items: baseline;
+  min-width: 100%;
+  max-width: 100%;
+  float: right;
+  height: 100px;
 }
 .header-content {
   display: flex;
@@ -80,6 +88,59 @@ header {
 }
 .header-center-area {
   width: 50%;
-  margin: auto;
   text-align: center;
+}
+.header-area {
+    margin: 10px auto;
+    z-index: 1000;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+
+}
+
+
+/**
+ *  SIDEBAR NAV
+ */
+
+ .sidebar {
+    float: left;
+    margin-top: 160px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1000;
+ }
+.logo-container {
+    padding-bottom: 121px !important;
+}
+ .main-content-logo {
+     font-size: 30px !important;
+     margin: 33px 42% 0 0 !important;
+ }
+
+ /**
+  * HomePage
+  */
+
+  .home-page-card {
+      width: 50% !important;
+  }
+  .home-page-content-card {
+      width: 100%;
+  }
+
+  /**
+   *  FOOTER
+   */
+.footer {
+    border-bottom: none !important;
+    margin: 5em 0em -500px 0em !important;
+    padding: 5em 0em !important;
+    bottom: 0 !important;
+    position: absolute !important;
+    min-width: 100%;
 }
